@@ -345,9 +345,10 @@
         }
 
         @media (max-width:911px) {
-            .about{
+            .about {
                 text-align: center;
             }
+
             .sec-2-ch-1 {
                 font-size: 17px;
             }
@@ -355,7 +356,8 @@
             .sec-2-ch-2 img {
                 height: 50vh;
             }
-            .my-skills{
+
+            .my-skills {
                 text-align: center;
             }
         }
@@ -378,6 +380,13 @@
                 width: 50%;
                 margin-left: 25vw;
                 height: 30vh;
+            }
+        }
+
+        @media (max-width:576px) {
+            .sec-2-ch-1 {
+                font-size: 10px;
+                width: 100%;
             }
         }
 
@@ -546,8 +555,9 @@
             background-size: 150px 150px;
             background-position: center 0;
             background-repeat: no-repeat; */
-            margin-bottom: 50px;
-            margin-top: 150px;
+            padding-bottom: 50px;
+            padding: 0 40px;
+            padding-top: 100px;
         }
 
         .section-4 {
@@ -770,6 +780,9 @@
             font-weight: bold;
             text-shadow: 2px 2px 5px black;
             text-align: center;
+            padding-bottom: 50px;
+            padding: 0 40px;
+            padding-top: 100px;
         }
 
         .section-6 {
@@ -829,24 +842,47 @@
                 font-size: 15px;
             }
         }
+           @media(max-width:576px) {
+             form>input{
+                padding: 0px;
+                font-size:medium;
+             }
+           }
 
 
         /* footer */
 
+
         .footer {
-            height: 100px;
+            height: 450px;
             width: 100%;
             padding: 0 20px;
             display: flex;
             justify-content: center;
-            background-color: rgba(0, 110, 255, 0.5);
-            backdrop-filter: blur(5px);
+            /* background: #82ccd9;
+            background: linear-gradient(90deg, rgb(135, 222, 238) 0%, rgb(93, 188, 236) 10%, rgba(12, 60, 138, 1) 43%); */
+            /* backdrop-filter: blur(5px); */
             padding-top: 5px;
+            margin-top: 100px;
+            box-shadow: -1px -8px 14px 2px rgba(43, 212, 215, 0.75);
+            -webkit-box-shadow: -1px -8px 14px 2px rgba(78, 160, 248, 0.75);
+            -moz-box-shadow: -1px -8px 14px 2px rgba(46, 27, 216, 0.75);
+        }
+
+        .main-ftr {
+            background-image: url('./Polished_Chrome_AR_Logo_Design-removebg-preview.png');
+            background-size: 200px 200px;
+            backdrop-filter: blur(10px);
+            background-repeat: no-repeat;
+            height: 450px;
+            width: 100%;
+            background-position: center;
         }
 
         ul {
             display: flex;
             position: absolute;
+            bottom: 5px;
         }
 
         ul li {
@@ -1021,26 +1057,104 @@
 
             }
         }
-          @media (max-width:911px) {
-        
-            .my-skills{
+
+        @media (max-width:911px) {
+
+            .my-skills {
                 text-align: center;
             }
         }
+
+        @media(max-width:695px) {
+            .skill {
+                text-align: center;
+            }
+        }
+
+        /* ------------------------------------ */
+        .footer-inr-1 {
+            /* height: 80%; */
+            /* width: 100%; */
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .ftr-inr-child {
+            /* height: 100%; */
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .ftr-inr-child a {
+            text-decoration: none;
+            display: block;
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-shadow: 2px 2px 5px black;
+            line-height: 40px;
+        }
+
+        .ftr-inr-child P {
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            text-shadow: rgba(214, 23, 23, 0.588)px black;
+            padding-bottom: 10px;
+        }
+
+        /* ---------------------------- */
+        @media(max-width:695px) {
+            .footer {
+                backdrop-filter: blur(5px);
+            }
+
+            .footer-inr-1 {
+                grid-template-columns: auto auto;
+            }
+
+            .ftr-third {
+                text-align: start;
+                margin-bottom: 10vh;
+            }
+
+            .ftr-inr-child P {
+                font-size:20px;
+            }
+        }
+
+        @media(max-width:576px) {
+            ul li a {
+                height: 6vh;
+                padding-bottom: 80px;
+                width: 13vw;
+            }
+
+            ul {
+                /* display: flex;
+                position: absolute;
+                bottom: 5px; */
+                bottom: 0;
+            }
+
+            .ftr-inr-child {
+                font-size: 15px;
+            }
+        }
     </style>
+
 </head>
 
 <body>
     <header class="header">
-        <div class="logo"> <img src="./Polished_Chrome_AR_Logo_Design-removebg-preview.png" alt=""
-                height="100%" width="100%">
+        <div class="logo"> <img src="./Polished_Chrome_AR_Logo_Design-removebg-preview.png" alt="" height="100%"
+                width="100%">
         </div>
         <nav class="navbar">
             <a href="" class="menu-link">Home</a>
-            <a href="" class="menu-link">About</a>
-            <a href="" class="menu-link">Skills</a>
-            <a href="" class="menu-link">Projects</a>
-            <a href="" class="menu-link">Content</a>
+            <a href="#about" class="menu-link">About</a>
+            <a href="#my-skills" class="menu-link">Skills</a>
+            <a href="#skill" class="menu-link">Projects</a>
+            <a href="#content-id" class="menu-link">Content</a>
             <a href=""><button class="resume-btn">Resume</button></a>
         </nav>
         <i class="fa-solid fa-bars icon"></i>
@@ -1066,7 +1180,7 @@
     </div>
 
 
-    <div class="main-sec-2">
+    <div class="main-sec-2" id="about">
         <h1 class="about">About Me</h1>
         <section class="section-2">
             <div class="sec-2-ch-1">
@@ -1084,13 +1198,14 @@
                 </p>
             </div>
             <div class="sec-2-ch-2">
-                <img src="./WhatsApp Image 2025-07-05 at 13.41.16_972ac294.jpg" class="my-img" alt="" height="100%" width="100%">
+                <img src="./WhatsApp Image 2025-07-05 at 13.41.16_972ac294.jpg" class="my-img" alt="" height="100%"
+                    width="100%">
         </section>
     </div>
 
     <!-- section-3 -->
 
-    <div class="main-3">
+    <div class="main-3" id="my-skills">
         <h1 class="my-skills">My Skills</h1>
         <section class="sec-3">
             <div class="item"><span>HTML:5</span></div>
@@ -1103,7 +1218,7 @@
 
         <!-- section-4 -->
 
-        <div class="main-4">
+        <div class="main-4" id="skill">
 
             <div class="skill">
                 My Projects
@@ -1200,7 +1315,7 @@
 
         <!-- section-6 -->
 
-        <div class="sec-6-main">
+        <div class="sec-6-main" id="content-id">
             <h1>Contect Me</h1>
             <section class="section-6">
                 <div class="contect-main">
@@ -1217,22 +1332,39 @@
     </div>
     <!-- footer -->
 
-    <footer class="footer">
-        <ul>
-            <li>
-                <a href="#">
-                    <i class="fab fa-facebook-f "></i>
- </a>
-            </li>
-            <li>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </li>
-            <li>
-                <a href="#"><i class="fab fa-google-plus-g"></i></a>
-            </li>
-            <li> <a href="#"><i class="fab fa-twitter"></i></a> </li>
-        </ul>
-    </footer>
+    <div class="main-ftr">
+        <footer class="footer">
+            <div class="footer-inr-1">
+                <div class="ftr-inr-child">
+                    <p>Quick links</p>
+                    <a href="">About me</a>
+                    <a href=""> My work</a>
+                    <a href="">Services</a>
+                    <a href="">Contact</a>
+                </div>
+                <div class="ftr-inr-child">
+                    <p>Explore</p>
+                    <a href="">Insights</a>
+                    <a href="">Resume</a>
+                </div>
+                <div class="ftr-inr-child ftr-third">
+                    <p>Contect Information</p>
+                    <a href=""><i class="fas fa-phone" style="color: rgb(240, 176, 176);"></i> +91 3124565432</a>
+                    <a href=""><i class="fas fa-envelope" style="color: rgb(233, 183, 183);"></i>
+                        aryanraval10@gmail.com</a>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-instagram ftr-icn"></i></a>
+                </li>
+                <li> <a href="#"><i class="fab fa-linkedin-in ftr-icn"></i></a></li>
+                <li> <a href="#"><i class="fas fa-comment-alt ftr-icn"></i></a>
+                <li> <a href="#"><i class="fab fa-github ftr-icn"></i>
+                </li></a>
+            </ul>
+        </footer>
+    </div>
 </body>
 
 </html>
